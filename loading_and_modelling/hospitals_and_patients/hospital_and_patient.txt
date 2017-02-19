@@ -1,0 +1,8 @@
+average_correlation	variance_corrleation
+-0.03836485945993233    -0.09610504517527439
+
+corr(S.average_score, S.average_survey) average_correlation, corr(S.variance_score,S.average_survey) variance_correlation,
+corr(S.average_score, S.average_achievement) achievement_avg_corr, corr(S.variance_score,S.average_achievement) achievement_var_corr,
+corr(S.average_score, S.average_improvement) improvement_avg_corr, corr(S.variance_score,S.average_improvement) improvement_var_corr,
+corr(S.average_score, S.average_dimension) dimension_avg_corr, corr(variance_score,average_dimension) dimension_var_corr
+-0.03836485945993233    -0.09610504517527439    -0.0287069816068315     -0.06607689815933496    -0.028392969119741467   -0.06272764334490695    -0.02944679030731027 -0.11363905899872818

@@ -9,6 +9,4 @@ create table hospital
 as select provider_id, hospital_name, city, address, state from general_hospital_information;
 
 create table survey_result
-as select substr(overall_achievement,1,1) as overall_achievements, substr(overall_improvement,1,1) as overall_improvements, substr(overall_dimension,1,2) as overall_dimensions, (substr(overall_achievement,1,1)+ substr(overall_improvement,1,1)+substr(overall_dimension,1,2))/3 as overall_rating from survey_response;
-
-select substr(overall_achievement,1,1) as overall_achievements, substr(overall_improvement,1,1) as overall_improvements, substr(overall_dimension,1,2) as overall_dimensions, (substr(overall_achievement,1,1)+ substr(overall_improvement,1,1)+substr(overall_dimension,1,2))/3 as overall_rating from survey_response limit 10;
+as select provider_id,substr(overall_achievement,1,1) as overall_achievements, substr(overall_improvement,1,1) as overall_improvements, substr(overall_dimension,1,2) as overall_dimensions, (substr(overall_achievement,1,1)+ substr(overall_improvement,1,1)+substr(overall_dimension,1,2))/3 as overall_rating from survey_response;
